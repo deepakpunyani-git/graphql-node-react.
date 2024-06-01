@@ -1,0 +1,22 @@
+query GetAuthor($getAuthorId: ID!) {
+    getAuthor(id: $getAuthorId) {
+        id
+        name
+    }
+}
+
+query getAllBlogs() {
+  getBlogs {
+    title
+  }
+}
+
+query getAllBlogs {
+  getBlogs {
+    title
+    author {
+      name
+    }
+  }
+
+}
